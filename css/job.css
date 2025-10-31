@@ -857,24 +857,3 @@ body {
   color: #dcdcdc;
   line-height: 1.5;
 }
-/* --- Mobile Fix for Theme Switcher Visibility --- */
-@media (max-width: 480px) {
-  .theme-switcher {
-    /* Change stacking from vertical (column) to horizontal (row) */
-    flex-direction: row; 
-    
-    /* Ensure they are positioned well on the bottom right corner */
-    right: 15px; 
-    bottom: 15px;
-    
-    /* Optional: reduce the gap slightly */
-    gap: 8px; 
-  }
-  
-  .theme-btn {
-    /* Make buttons slightly smaller to guarantee all four fit on a narrow screen */
-    width: 35px;
-    height: 35px;
-    font-size: 16px; 
-  }
-}
