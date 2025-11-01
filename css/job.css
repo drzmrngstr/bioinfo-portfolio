@@ -681,7 +681,7 @@ section{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  z-index: 999;
+  z-index: 999999;
 }
 
 .theme-btn {
@@ -700,11 +700,29 @@ section{
   justify-content: center;
   /* UPDATED TO USE THE ACTIVE GRADIENT */
   background: var(--gradient);
+  
+
 }
 
 .theme-btn:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+  .theme-switcher {
+    bottom: 15px; 
+    
+    /* CRITICAL: Must be 'auto' to ensure 'left' is calculated from the viewport */
+    right: auto; 
+    
+    /* Re-enforce the horizontal position based on the visible viewport width (100vw - 55px) */
+    left: calc(100vw - 55px); 
+    
+    flex-direction: row;
+    z-index: 999999; 
+  }
+}
+
 
 body {
   margin: 0;
