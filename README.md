@@ -1,2 +1,3 @@
 # bioinfo-portfolio
-website
+This is my portfolio website i created using html,css & js
+
